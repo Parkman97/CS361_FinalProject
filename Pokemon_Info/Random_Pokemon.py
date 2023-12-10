@@ -1,6 +1,7 @@
 from random import randint
 import requests
 import socket
+from Sockets import api_socket
 
 def randompokemon():
     HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
@@ -19,7 +20,10 @@ def randompokemon():
                 # Check if the request was successful (status code 200)
                 if response.status_code == 200:
                     data = response.json()
-                    return (3,data['name'],data)
+                    name = data['forms'][0]['name']
+                    api_socket.send((f"pokemon/{name}").encode('utf-8'))
+
+                    return 3
 
                 else:
                     print(f"Failed to download image. Status code: {response.status_code}")
@@ -35,6 +39,3 @@ def randompokemon():
             
         except Exception as e:
             print(f"Error: {e}")
-
-    
-    

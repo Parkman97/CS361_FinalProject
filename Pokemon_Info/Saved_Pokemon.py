@@ -6,6 +6,7 @@ savedPokemons = []
 savedTypes = []
 
 def savedPokemonList(saved_item=None):
+    os.system('cls')
     if saved_item is not None:
         if saved_item[0] == 0:
             if saved_item[1] not in savedPokemons:
@@ -25,15 +26,15 @@ def savedPokemonList(saved_item=None):
         while not validation:
             print('\n Select a choice below: ') 
             
-            print('1. Select a Pokemon from list to display info')
-            print('2. Select a Pokemon Type from list to display info')
-            print('3. Remove a Pokemon from the list')
-            print('4. Remove a Pokemon Type from the list')
+            print('1. Display Pokemon from Saved List')
+            print('2. Display Pokemon Type from Saved List')
+            print('3. Remove a Pokemon')
+            print('4. Remove a Pokemon Type')
             print('5. Help Menu')
             print('6. Main Menu')
             
             saved_input = input('Enter your number here: ')
-            result = dataValidation(1, 4, saved_input) 
+            result = dataValidation(1, 6, saved_input) 
             validation = result[0]
             if validation == True:
                 saved_input = result[1]
@@ -61,7 +62,7 @@ def savedPokemonList(saved_item=None):
                     picked_pokemon = result[1]
 
             api_socket.send((f"pokemon/{savedPokemons[int(picked_pokemon)-1]}").encode('utf-8'))
-            return 3
+            return (3,1)
         
         if saved_input == 2:
 
@@ -77,7 +78,7 @@ def savedPokemonList(saved_item=None):
             
             picked_type = input('Enter your choice here: ')
             api_socket.send((f"type/{savedTypes[int(picked_type)-1]}").encode('utf-8'))
-            return 4
+            return (4,1)
 
         if saved_input == 3:
             if savedPokemons == []:
@@ -98,7 +99,7 @@ def savedPokemonList(saved_item=None):
                 if validation == True:
                     picked_pokemon = result[1]
 
-            savedPokemons.remove(savedPokemons[picked_pokemon])
+            savedPokemons.remove(savedPokemons[int(picked_pokemon) - 1])
             return 5
 
         if saved_input == 4:
@@ -113,7 +114,7 @@ def savedPokemonList(saved_item=None):
                 line_counter += 1
             
             picked_type = input('Enter your choice here: ')
-            savedTypes.remove(savedTypes[picked_type])
+            savedTypes.remove(savedTypes[int(picked_type) - 1])
 
             return 5
         
@@ -122,7 +123,3 @@ def savedPokemonList(saved_item=None):
         
         if saved_input == 6:
             return 10
-        
-
-
-#Implement removal of saved pokemon from list

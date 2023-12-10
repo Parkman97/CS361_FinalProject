@@ -1,0 +1,28 @@
+-------------------------HELP MENU---------------------------------
+
+Features:
+
+     *** Display Random Pokemon 
+     
+        This option selects a random pokemon from the database and displays a picture and some of its stats.
+        Recommended for anyone new to Pokemon or doesn't remember any names
+
+    *** Search By Name or By Type 
+    
+        By Name:
+        This option allows the user to search for a specific pokemon if they know its name. It will return the image of the pokemon and some of their stats
+        Need to know the Pokemon's name in order to use this option
+
+        By Type:
+        This option allows the user to search for a specific type of Pokemon. It will return a list of pokemon that have that type and other stats
+        Need to know the type in order to use this option
+
+    *** Saved Pokemon List 
+        This option shows two list that contain pokemon or pokemon types that have been saved. Pokemon and pokemon types can be saved after they have been 
+        searched which happens in the Display Random Pokemon or Search By Name or By Type options.
+        
+    *** Update Notes 
+        This shows a list of updates that have been made to the program. It will highlight any new features 
+        or updates to existing features.
+
+    *** Exit - When you are done browsing pokemon select this option to exit the program.

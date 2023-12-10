@@ -1,3 +1,0 @@
-----------------------------Program Updates-----------------------------
-
-Version 1.0 - Contains the UI funcianlity through the command line,  function names (Not fully coded yet) and all the necessary text files

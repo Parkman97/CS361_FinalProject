@@ -1,6 +1,4 @@
 from DataValidation import dataValidation
-import os
-from clint.textui import colored, puts
 
 def mainMenu():
     validation = False

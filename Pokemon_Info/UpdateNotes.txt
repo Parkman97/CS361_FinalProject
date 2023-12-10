@@ -1,0 +1,11 @@
+----------------------------Program Updates-----------------------------
+
+Version 1.0 - Contains the UI functionality through the command line,  function names and all the necessary text files
+
+Version 1.1 - Added Pokemon Stats and Pokemon Images to Get Random Pokemon and Search Pokemon features
+
+Version 1.2 - Updated Saved Pokemon menu to allow users to remove Pokemon from saved list 
+
+Version 1.3 - Added validation on user input. This makes sure there input is correct
+
+Version 1.4 - Updated how Pokemon info was printed to the command line 

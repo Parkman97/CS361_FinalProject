@@ -1,5 +1,4 @@
 import requests
-import socket
 
 def get_image(pokemonName):
 
