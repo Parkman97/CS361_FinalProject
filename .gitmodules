@@ -1,0 +1,3 @@
+[submodule "pokemon-microservice"]
+	path = pokemon-microservice
+	url = https://github.com/ekelly42/pokemon-microservice
