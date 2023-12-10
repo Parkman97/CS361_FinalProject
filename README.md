@@ -2,9 +2,8 @@
 
 In order to run this project you will need to run two different python files 
 
-1) First open the command line and navigate into the folder called pokemon-microservice. Then run the file called 
-   serer_socket.py by entering the command python serer_socket.py
+1) You will first need to download the submodule found in the folder called pokemon-microservice @ e376932. Once you've 
+   downloaded it open a command line instance and navigate to it. Once there run the command python server_socket.py
 
-2) Next, in a new command line navigate into the Pokemon_Info folder. Then run the file called Pokemon.py and you 
-   can achieve this by entering the command python Pokemon.py
+2) Next, in a new command line navigate into the Pokemon_Info folder located in this project. Then run the command python Pokemon.py
  
