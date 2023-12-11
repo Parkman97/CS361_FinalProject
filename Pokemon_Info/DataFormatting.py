@@ -17,10 +17,10 @@ def dataFormatting(type, data, pokemonName=None):
                 else:
                     print(f"{key.capitalize():<19} | {value}")
                 print('--------------------------------------------------------------------')
-        
 
     else:
-       
+        print('\n')
+        print('\n')
         print("|Type      |ID  |Pokemon                  |Moves                    |Half Damage From         |Half Damage To           |Double Damage To         |Double Damage From       ")
         print("|----------|----|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------")
 

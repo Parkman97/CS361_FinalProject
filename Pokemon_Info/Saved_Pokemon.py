@@ -6,8 +6,9 @@ savedPokemons = []
 savedTypes = []
 
 def savedPokemonList(saved_item=None):
-    os.system('cls')
     if saved_item is not None:
+       
+        os.system('cls')
         if saved_item[0] == 0:
             if saved_item[1] not in savedPokemons:
                 savedPokemons.append(saved_item[1])
@@ -16,7 +17,7 @@ def savedPokemonList(saved_item=None):
                 savedTypes.append(saved_item[1])
         print('List of saved Pokemon: ', savedPokemons)
         print('List of saved Types: ', savedTypes)
-        input('\nEnter a value to continue: ')
+        input('\nPress enter to continue: ')
 
     else:
         print(f'List of saved Pokemon: {savedPokemons}')
